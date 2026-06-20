@@ -1,0 +1,158 @@
+This is a formal way to looking on my own path and building a way to learn Rust:
+
+I need to find the conditions of when i will use these syntactical paths 
+list ways:
+
+Generics:                                                                  Line:   10    
+                                                                           
+
+Generic Function                                                           Line:   14   
+Generic Struct                                                             Line:   24   
+Traits with generics and bounds                                            Line:   37
+Empty bound (marker trait)                                                 Line:   56   
+Multiple bounds                                                            Line:   68   
+Where clause                                                               Line:   96  
+Newtype idiom                                                              Line:  125  
+Associated types                                                           Line:  139  
+Associated items                                                           Line:  168  
+
+
+Phantom Type Paramenters                                                   Line:  187  
+
+PhantomData for type safety with units                                     Line:  193
+PhantomData owning a generic type                                          Line:  220 
+                                                                           
+                                                                           
+Scoping Rules (RAII, Ownership, Moves, Partial Moves)                      Line:  240
+                                                                           
+RAII                                                                       Line:  244
+Ownership and moves                                                        Line:  266
+Clone avoids move                                                          Line:  275
+Mutability                                                                 Line:  284
+Partial moves (moving individual fields)                                   Line:  292
+Destructuring with partial move                                            Line:  312 
+
+
+Borrowing                                                                  Line:  329  
+
+Immutable borrow                                                           Line:  333  
+Mutable borrow                                                             Line:  346
+Cannot have both mutable and immutable borrows                             Line:  358  
+Borrowing fields (not partial moves)                                       Line:  373
+
+
+LifeTimes                                                                  Line:  392  
+
+Explicit lifetime annotation on functions                                  Line:  396  
+Lifetime in struct                                                         Line:  410  
+Lifetime in methods                                                        Line:  426  
+Lifetime bounds on traits                                                  Line:  451 
+Lifetime coercion (subtyping)                                              Line:  486 
+Static lifetime                                                            Line:  508
+Lifetime elison                                                            Line:  515 
+
+Traits                                                                     Line:  528
+
+Derive                                                                     Line:  532
+Returning Traits with dyn                                                  Line:  546
+Operator overloading                                                       Line:  580
+Drop trait                                                                 Line:  601
+Iterator trait                                                             Line:  627
+impl Trait                                                                 Line:  653  
+Clone trait                                                                Line:  681  
+Supertraits                                                                Line:  698  
+Disambiguating overlapping traits                                          Line:  725
+
+Macro_Rules!                                                               Line:  755
+
+Designators: different token types                                         Line:  759
+Overload: same macro name, different patterns                              Line:  774
+Repeat: build a vec-like macro                                             Line:  790
+DRY: reduce repetition with macros                                         Line:  810  
+DSL: simple calculator macro                                               Line:  830 
+
+Error Handling                                                             Line:  851
+
+Panic (test should panic)                                                  Line:  855
+Option / unwrap                                                            Line:  862
+Unpacking with ? on Option                                                 Line:  873
+Combinators: map, and_then                                                 Line:  884  
+Defaults with Option                                                       Line:  893  
+Result: map                                                                Line:  905   
+Result: aliases                                                            Line:  915  
+Result: early returns                                                      Line:  931  
+Result: ? operator                                                         Line:  951  
+
+Error Handling Advanced                                                    Line:  964 
+
+Multiple error types with Box<dyn Error>                                   Line:  971
+Pulling Result from Options                                                Line:  987 
+Defining custom error types                                                Line: 1000 
+Boxing errors                                                              Line: 1034
+Wrapping errors (with From)                                                Line: 1045
+Iterating over Results                                                     Line: 1072
+
+STD LIBRARY TYPES                                                          Line: 1090
+
+Box                                                                        Line: 1098 
+Vec                                                                        Line: 1118
+String                                                                     Line: 1133 
+Option                                                                     Line: 1146
+Result                                                                     Line: 1162
+HashMap with custom keys                                                   Line: 1174
+HashSet                                                                    Line: 1197 
+Rc (reference counted)                                                     Line: 1209 
+Arc (atomic reference counted)                                             Line: 1224
+
+STD MISC                                                                   Line: 1236  
+                                                                           
+Threads                                                                    Line: 1243
+Threads with move closure                                                  Line: 1253
+Channels                                                                   Line: 1264
+Channels with multiple values                                              Line: 1276
+Path                                                                       Line: 1291
+File I/O: create and write                                                 Line: 1303 
+File I/O: open and read                                                    Line: 1308
+File I/O: read_lines                                                       Line: 1328 
+Child processes: command with output                                       Line: 1344 
+Child processes: pipe between commands                                     Line: 1359
+Child processes: wait                                                      Line: 1394
+Filesystem operations                                                      Line: 1400 
+Program arguments (simulated)                                              Line: 1418
+FFI: calling C standard library                                            Line: 1429 
+
+TESTING                                                                    Line: 1442
+
+Basic unit test                                                            Line: 1446  
+Test with assert!                                                          Line: 1455
+Test with assert_eq! / assert_ne!                                          Line: 1462
+Test that should panic                                                     Line: 1469
+Test that ignores (for illustration, non-ignored in real use)              Line: 1477 
+Doc test concept (as a unit test since doc tests need lib crates)          Line: 1486 
+Integration test concept                                                   Line: 1502
+
+UNSAFE OPERATIONS                                                          Line: 1516 
+
+Raw pointers
+Unsafe function                                                            Line: 1534
+Unsafe block calling exterb function                                       Line: 1547
+Safe abstraction over unsafe                                               Line: 1559
+Raw identifiers                                                            Line: 1580 
+Inline asm (x86_64 only)                                                   Line: 1596
+Compatibility note                                                         Line: 1617
+
+
+:set virtualedit=all
+
+
+
+
+
+
+
+
+
+
+
+
+
